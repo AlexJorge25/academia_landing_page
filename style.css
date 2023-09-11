@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),url(./img/bodybuilder-4k-full-hd-wallpaper-preview.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+.navegador {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+.logo {
+    align-items: center;
+    display: flex;   
+}
+.logo img {
+    height: 2.1em;
+    margin-right: 15px;
+
+}
+.logo h1 {
+    font-size: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.nav ul {
+    font-family: monospace;
+    font-size: 15px;
+
+}
+.nav ul li{
+    list-style-type: none;
+    margin-left: 20px;
+    font-weight: 5px;
+    text-transform: uppercase;
+    transition: 0.10s;
+}
+.nav ul li:hover{
+    color: rgb(219, 35, 35);
+}
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.opcoes1{
+    height: 25px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.opcoes1:hover{
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 20px;
+    padding: 5px;
+}
+.opcoes2{
+    height: 25px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+.opcoes2:hover{
+    height: 30px;
+    background-color: rgba(243, 243, 243, 0.151);
+    border-radius: 20px;
+    padding: 5px;
+}
+.main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 300px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ver_planos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.ver_planos button{
+    
+    color: white;
+    font-size: 15px;
+    font-weight: 10px;
+    font-family:monospace;
+    background-color: rgb(236, 11, 11);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+}
+.planos {
+    display: none;
+    background-color: rgba(22, 21, 21, 0.425);
+    padding: 20px;
+    border-radius: 20px;
+    border-color: red;
+    
+}
+.planos h1{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: monospace
+    
+    
+}
+.ver_planos button:hover + .planos {
+    display: block;
+}
+
+
