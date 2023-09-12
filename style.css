@@ -1,17 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+* /*<--seleciona todos os objetos do site*/{
+    margin: 0;/*retira margin de todos os elementos*/
+    padding: 0;/*retira padding de todos os elementos*/
+    box-sizing: border-box;/*serve para facilitar o layout das dimensoes dos objetos*/
+    text-decoration: none;/*retira decorações do texto */
 }
 .container {
+    /*linear gradient faz uma "sombra" na imagem que vai de 
+    uma cor preta mais opaca para uma mais trasparente,que ficara na url/img que selecionei*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),url(./img/bodybuilder-4k-full-hd-wallpaper-preview.jpg) ;
+    /*faz com que a imagem não repita*/
     background-repeat: no-repeat;
+    /*faz com que a imagem fica na tela toda da primeira pagina*/
     background-size: cover;
+    /*centralizei a imagem de fundo no centro senao ela fica bugada*/
     background-position: center;
+    /*defini a altura da tela total por isso o vh*/
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-x: hidden;/*não deixa rolar para os lados além do limite que quero*/
+    overflow-y: hidden;/*não deixa rolar para baixo além do limite que quero*/
     
 }
 .navegador {
@@ -24,7 +30,7 @@
 .logo {
     align-items: center;
     display: flex;
-    cursor: pointer;   
+    cursor: pointer; /*faz com que apareça uma maozinha apontando no lugar que voce quer*/  
 }
 .logo img {
     height: 2.1em;
@@ -46,15 +52,19 @@
 
 }
 .nav ul li{
-    list-style-type: none;
+    list-style-type: none;/*tira as bolinhas da lista*/
     margin-left: 20px;
     font-weight: 5px;
-    text-transform: uppercase;
-    transition: 0.10s;
+    text-transform: uppercase;/*trasnforma o texto para caixa alta mesmo tendo escrito em caixa baixa*/
+    transition: 0.14s;/*transição de 0,10s*/
     cursor: pointer;
+    border:1px solid transparent;/*se tirar isso a bordar da bug,testa ai: parte1 */
+    
 }
 .nav ul li:hover{
+    
     color: rgb(219, 35, 35);
+    border-bottom: 1px solid rgb(219, 35, 35);/*faz um risquinho debaixo do link,fica massa: parte2*/
 }
 .opcoes {
     display: flex;
@@ -64,24 +74,27 @@
 
 }
 .opcoes1{
-    height: 25px;
+    height: 30px;
     border-radius: 20px;
     margin-right: 5px;
+    padding: 5px;
 }
 .opcoes1:hover{
     height: 30px;
-    background-color: rgba(255, 255, 255, 0.185);
+    background-color: rgba(255, 255, 255, 0.089);
     border-radius: 20px;
     padding: 5px;
+
 }
 .opcoes2{
-    height: 25px;
+    height: 30px;
     border-radius: 20px;
     margin-left: 5px;
+    padding: 5px;
 }
 .opcoes2:hover{
     height: 30px;
-    background-color: rgba(243, 243, 243, 0.151);
+    background-color: rgba(243, 243, 243, 0.11);
     border-radius: 20px;
     padding: 5px;
 }
@@ -90,11 +103,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;/*defini que quero o elemento em coluna e não um do lado do olho em linha*/
 }
 .section h1 {
     font-family:Arial, Helvetica, sans-serif;
-    padding-top: 300px;
+    padding-top:15%;
     font-size: 60px;
     font-weight: bold;
     color: white;
@@ -110,8 +123,8 @@
 .botao{
     
     color: white;
-    font-size: 15px;
-    font-weight: 10px;
+    font-size: 15px;/*tamanho letra*/
+    font-weight: 10px;/*grossura da letra*/
     font-family:monospace;
     background-color: rgb(236, 11, 11);
     border-radius: 5px;
@@ -167,7 +180,7 @@
 }
 .texto_pagina_2 p {
     color: rgba(48, 48, 48, 0.719);
-    line-height: 25px;
+    line-height: 25px;/*faz dar um espaçameto de 25px entra as linhas*/
 }
 .pagina2 img{
     height: 50vh;
